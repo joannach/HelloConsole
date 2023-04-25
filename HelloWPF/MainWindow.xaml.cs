@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows;
-using Windows.UI.Xaml.Controls;
 
 namespace HelloWPF
 {
@@ -14,7 +13,7 @@ namespace HelloWPF
             InitializeComponent();
         }
 
-        private async void button_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new HelloWindow(textBox_username.Text);
             dialog.ShowDialog();
